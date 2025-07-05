@@ -1,13 +1,11 @@
 
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { skills } from '../data/portfolio';
 
 export default function Skills() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   const categories = Array.from(new Set(skills.map(skill => skill.category)));
 
   return (

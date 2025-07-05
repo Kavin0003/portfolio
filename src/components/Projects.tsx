@@ -38,9 +38,14 @@ export default function Projects() {
               }`}
             >
               <div className="relative overflow-hidden">
-                <div className="h-48 bg-gradient-to-br from-neon-purple/20 to-neon-blue/20 flex items-center justify-center">
-                  <div className="text-6xl text-neon-purple/30">💻</div>
-                </div>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  onError={(e) => {
+                    e.currentTarget.src = "/placeholder.svg";
+                  }}
+                />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
                   <motion.a
                     href={project.github}

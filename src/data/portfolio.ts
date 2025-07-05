@@ -6,7 +6,8 @@ export const personalInfo = {
   email: "kavinanand.j0003@gmail.com",
   linkedin: "https://www.linkedin.com/in/kavin-anand-143a13289/",
   github: "https://github.com/Kavin0003",
-  resume: "/resume.pdf"
+  resume: "/resume.pdf",
+  photo: "/images/profile.jpg"
 };
 
 export const skills = [

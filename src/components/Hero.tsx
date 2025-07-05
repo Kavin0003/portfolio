@@ -51,6 +51,33 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
+          {/* Personal Photo */}
+          <motion.div
+            className="mb-8 flex justify-center"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1, duration: 0.8 }}
+          >
+            <div className="relative">
+              <motion.img
+                src={personalInfo.photo}
+                alt={personalInfo.name}
+                className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-neon-purple shadow-lg"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                onError={(e) => {
+                  // Fallback to placeholder if image doesn't exist
+                  e.currentTarget.src = "/placeholder.svg";
+                }}
+              />
+              <motion.div
+                className="absolute inset-0 rounded-full border-4 border-neon-cyan opacity-50"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+              />
+            </div>
+          </motion.div>
+
           <motion.h1
             className="text-6xl md:text-8xl font-bold font-display mb-6"
             initial={{ scale: 0.5, opacity: 0 }}
