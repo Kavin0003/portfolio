@@ -76,7 +76,7 @@ export default function Footer() {
           className="mt-8 pt-8 border-t border-foreground/10 text-center"
         >
           <p className="text-foreground/50 text-sm">
-            Designed and developed with ❤️ using modern web technologies
+           Designed and developed by Kavin Anand. 
           </p>
         </motion.div>
       </div>

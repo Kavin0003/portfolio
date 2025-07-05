@@ -27,15 +27,28 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    console.log('Form submitted:', formData);
-    setIsSubmitting(false);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    
-    // You would typically integrate with a form service here
-    alert('Message sent successfully!');
+    try {
+      // Replace 'YOUR_FORM_ID' with your actual Formspree form ID
+      // Get it from https://formspree.io after creating an account
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      alert('Failed to send message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const socialLinks = [
@@ -202,8 +215,7 @@ export default function Contact() {
               </p>
               <motion.a
                 href={personalInfo.resume}
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Kavin-Anand-Resume.pdf"
                 className="inline-block px-8 py-3 border-2 border-neon-orange text-neon-orange font-semibold rounded-lg hover:bg-neon-orange hover:text-white transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

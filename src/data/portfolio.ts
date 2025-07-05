@@ -1,111 +1,119 @@
-
 export const personalInfo = {
-  name: "Alex Johnson",
-  title: "Full Stack Developer",
-  subtitle: "AI/ML Enthusiast & Web Developer",
-  bio: "Passionate developer specializing in modern web technologies and artificial intelligence. I love creating innovative solutions that bridge the gap between cutting-edge technology and user experience.",
-  email: "alex.johnson@example.com",
-  linkedin: "https://linkedin.com/in/alexjohnson",
-  github: "https://github.com/alexjohnson",
+  name: "Kavin Anand J",
+  title: "AI Engineer",
+  subtitle: "AI/ML Enthusiast & Full Stack Developer",
+  bio: "Passionate AI Engineer specializing in modern web technologies and artificial intelligence. I thrive on building innovative, real-world solutions that merge cutting-edge AI with seamless user experiences. Constantly learning, always building.",
+  email: "kavinanand.j0003@gmail.com",
+  linkedin: "https://www.linkedin.com/in/kavin-anand-143a13289/",
+  github: "https://github.com/Kavin0003",
   resume: "/resume.pdf"
 };
 
 export const skills = [
-  { name: "React", level: 95, category: "Frontend" },
-  { name: "TypeScript", level: 90, category: "Language" },
-  { name: "Node.js", level: 88, category: "Backend" },
-  { name: "Python", level: 92, category: "Language" },
+  { name: "Python", level: 90, category: "Language" },
+  { name: "TypeScript", level: 40, category: "Language" },
+  { name: "JavaScript", level: 70, category: "Language" },
+  { name: "React", level: 60, category: "Frontend" },
+  { name: "Node.js", level: 80, category: "Backend" },
+  { name: "Flask", level: 80, category: "Backend" },
+  { name: "HTML/CSS", level: 85, category: "Frontend" },
+  { name: "MySQL", level: 85, category: "Database" },
+  { name: "API Integration", level: 75, category: "Backend" },
+  { name: "RESTful APIs", level: 80, category: "Backend" },
   { name: "Machine Learning", level: 85, category: "AI/ML" },
-  { name: "TensorFlow", level: 80, category: "AI/ML" },
-  { name: "Next.js", level: 88, category: "Frontend" },
-  { name: "PostgreSQL", level: 85, category: "Database" },
-  { name: "AWS", level: 82, category: "Cloud" },
-  { name: "Docker", level: 78, category: "DevOps" },
-  { name: "GraphQL", level: 83, category: "Backend" },
-  { name: "React Native", level: 80, category: "Mobile" }
+  { name: "Deep Learning", level: 75, category: "AI/ML" },
+  { name: "Data Preprocessing", level: 80, category: "AI/ML" },
+  { name: "Data Analysis", level: 80, category: "AI/ML" },
+  { name: "Computer Vision", level: 70, category: "AI/ML" },
+  { name: "Natural Language Processing", level: 70, category: "AI/ML" },
+  { name: "TensorFlow", level: 75, category: "AI/ML" },
+  { name: "Scikit-learn", level: 80, category: "AI/ML" },
+  { name: "Pandas", level: 85, category: "AI/ML" },
+  { name: "NumPy", level: 85, category: "AI/ML" },
+  { name: "Tkinter", level: 70, category: "UI/GUI" },
+  { name: "Git", level: 75, category: "Tools" },
+  { name: "GitHub", level: 80, category: "Tools" },
+  { name: "VS Code", level: 85, category: "Tools" },
+  { name: "Docker", level: 60, category: "DevOps" },
+  { name: "Linux", level: 70, category: "Tools" },
+  { name: "Web Development", level: 80, category: "Frontend" },
+  { name: "Database Design", level: 80, category: "Database" },
+  { name: "System Architecture", level: 70, category: "Architecture" },
+  { name: "Problem Solving", level: 85, category: "Soft Skill" },
+  { name: "Project Planning", level: 75, category: "Management" },
+  { name: "Research & Development", level: 80, category: "Soft Skill" },
+  { name: "Technical Writing", level: 75, category: "Soft Skill" }
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "AI-Powered Task Manager",
-    description: "Smart task management application with AI-driven priority suggestions and natural language processing for task creation.",
-    image: "/placeholder.svg",
-    technologies: ["React", "Node.js", "OpenAI API", "PostgreSQL"],
-    github: "https://github.com/alexjohnson/ai-task-manager",
-    demo: "https://ai-task-manager-demo.vercel.app",
+    title: "AI-based Weather Prediction Application",
+    description: "AI-powered weather prediction application using advanced machine learning algorithms for accurate forecasts. Features real-time data processing and intuitive user interface.",
+    image: "/images/weather-app.png", // Add your screenshot here
+    technologies: ["Python", "Tkinter", "Regression", "OpenWeatherMap API"],
+    github: "https://github.com/Kavin0003/ai-weather-prediction",
+    demo: "https://your-weather-app-demo.vercel.app", // Add your live demo URL
     featured: true
   },
   {
     id: 2,
-    title: "E-Commerce Analytics Dashboard",
-    description: "Real-time analytics dashboard for e-commerce platforms with advanced data visualization and predictive analytics.",
-    image: "/placeholder.svg",
-    technologies: ["Next.js", "D3.js", "Python", "FastAPI"],
-    github: "https://github.com/alexjohnson/ecommerce-analytics",
-    demo: "https://ecommerce-analytics-demo.vercel.app",
+    title: "Hospital Management Database System",
+    description: "Comprehensive database system for managing hospital operations, patient records, and staff information with secure authentication and reporting features.",
+    image: "/images/hospital-management.png", // Add your screenshot here
+    technologies: ["Python", "Flask", "MySQL", "HTML/CSS"],
+    github: "https://github.com/Kavin0003/hospital-management-system",
+    demo: "https://your-hospital-system-demo.netlify.app", // Add your live demo URL
     featured: true
   },
   {
     id: 3,
-    title: "Social Media Sentiment Analyzer",
-    description: "Machine learning application that analyzes social media sentiment in real-time using NLP techniques.",
-    image: "/placeholder.svg",
-    technologies: ["Python", "TensorFlow", "React", "Flask"],
-    github: "https://github.com/alexjohnson/sentiment-analyzer",
-    demo: "https://sentiment-analyzer-demo.herokuapp.com",
+    title: "LinkedIn Profile Analyzer",
+    description: "Analyzes LinkedIn profiles for key skills, endorsements, and overall effectiveness using AI-powered insights and recommendations.",
+    image: "/images/linkedin-analyzer.png", // Add your screenshot here
+    technologies: ["JavaScript", "Node.js", "React", "Gemini API"],
+    github: "https://github.com/Kavin0003/linkedin-profile-analyzer",
+    demo: "https://your-linkedin-analyzer-demo.vercel.app", // Add your live demo URL
     featured: false
-  },
+  }
+];
+
+
+export const education = [
   {
-    id: 4,
-    title: "Blockchain Voting System",
-    description: "Secure and transparent voting system built on blockchain technology with React frontend.",
-    image: "/placeholder.svg",
-    technologies: ["Solidity", "Web3.js", "React", "Ethereum"],
-    github: "https://github.com/alexjohnson/blockchain-voting",
-    demo: "https://blockchain-voting-demo.netlify.app",
-    featured: true
+    degree: "Bachelor of Engineering in Artificial Intelligence and Machine Learning",
+    school: "Jerusalem College of Engineering",
+    year: "2023-2027",
+    description: "Focused on AI/ML technologies and their applications in real-world scenarios."
   }
 ];
 
 export const publications = [
   {
     id: 1,
-    title: "Deep Learning Approaches to Natural Language Understanding",
-    description: "Comprehensive analysis of transformer architectures and their applications in NLU tasks.",
-    date: "2024-01-15",
-    link: "https://medium.com/@alex/deep-learning-nlu",
-    type: "Blog Post"
+    title: "Machine Learning in Web Development: A Comprehensive Study",
+    description: "An analysis of how machine learning algorithms can be integrated into modern web applications to enhance user experience and functionality.",
+    date: "2024-03-15",
+    type: "Research",
+    link: "https://medium.com/@kavinanand.j0003/ml-in-web-dev", // Update with your actual article URL
+    tags: ["Machine Learning", "Web Development", "AI", "UX"]
   },
   {
     id: 2,
-    title: "Building Scalable React Applications: Best Practices",
-    description: "Guide to architecting large-scale React applications with performance optimization techniques.",
-    date: "2023-11-20",
-    link: "https://dev.to/alex/scalable-react-apps",
-    type: "Article"
+    title: "AI-Powered Weather Prediction: Technical Deep Dive",
+    description: "Exploring the technical implementation and machine learning algorithms behind accurate weather prediction systems.",
+    date: "2024-02-20",
+    type: "Article",
+    link: "https://dev.to/kavinanand/ai-weather-prediction", // Update with your actual article URL
+    tags: ["AI", "Weather Prediction", "Python", "Machine Learning"]
   },
   {
     id: 3,
-    title: "Machine Learning in Web Development: Current Trends",
-    description: "Exploring the integration of ML models in modern web applications and their practical implementations.",
-    date: "2023-09-10",
-    link: "https://alex-blog.netlify.app/ml-web-dev",
-    type: "Research"
-  }
-];
-
-export const education = [
-  {
-    degree: "Master of Science in Computer Science",
-    school: "University of Technology",
-    year: "2022",
-    description: "Specialized in Artificial Intelligence and Machine Learning"
-  },
-  {
-    degree: "Bachelor of Science in Software Engineering",
-    school: "Tech University",
-    year: "2020",
-    description: "Focus on Full-Stack Web Development and Data Structures"
+    title: "Hospital Management Systems: Database Design Best Practices",
+    description: "A comprehensive guide to designing efficient database systems for healthcare management applications.",
+    date: "2024-01-10",
+    type: "Tutorial",
+    link: "https://hashnode.com/@kavinanand/hospital-db-design", // Update with your actual article URL
+    tags: ["Database Design", "Healthcare", "MySQL", "System Architecture"]
   }
 ];

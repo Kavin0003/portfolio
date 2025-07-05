@@ -37,9 +37,7 @@ export default function About() {
                 {personalInfo.bio}
               </p>
               <p className="text-foreground/80 leading-relaxed">
-                With a strong foundation in both frontend and backend development, I specialize in creating scalable, 
-                user-centric applications. My passion for AI and machine learning drives me to explore innovative 
-                solutions that push the boundaries of what's possible in web development.
+                With a strong foundation in AI and web development, I am passionate about creating innovative solutions that enhance user experiences. My journey has been fueled by a love for technology and a desire to make a meaningful impact through my work.
               </p>
             </div>
 
@@ -64,7 +62,7 @@ export default function About() {
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-neon-pink rounded-full mr-3"></span>
-                  Mentoring aspiring developers
+                  Learning and sharing knowledge through blogs and tutorials  
                 </li>
               </ul>
             </motion.div>
